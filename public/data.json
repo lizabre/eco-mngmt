@@ -1,0 +1,3883 @@
+{
+ "departments": [
+  {
+   "id": "P00",
+   "name": "ДП «Львіввугілля»",
+   "type": "Підприємство",
+   "parentId": "0",
+   "area": null
+  },
+  {
+   "id": "P01",
+   "name": "Шахта «Степова»",
+   "type": "Шахта",
+   "parentId": "P00",
+   "area": 1800
+  },
+  {
+   "id": "P02",
+   "name": "Шахта «Лісова»",
+   "type": "Шахта",
+   "parentId": "P00",
+   "area": 1800
+  },
+  {
+   "id": "P03",
+   "name": "Шахта «Великомостівська»",
+   "type": "Шахта",
+   "parentId": "P00",
+   "area": 3200
+  },
+  {
+   "id": "P04",
+   "name": "Шахта «Відродження»",
+   "type": "Шахта",
+   "parentId": "P00",
+   "area": 2400
+  },
+  {
+   "id": "P05",
+   "name": "Шахта «Межирічанська»",
+   "type": "Шахта",
+   "parentId": "P00",
+   "area": 2400
+  },
+  {
+   "id": "P06",
+   "name": "Шахта «Червоноградська»",
+   "type": "Шахта",
+   "parentId": "P00",
+   "area": 2400
+  },
+  {
+   "id": "P07",
+   "name": "Вантажно-транспортне управління",
+   "type": "Підрозділ",
+   "parentId": "P00",
+   "area": 1500
+  },
+  {
+   "id": "P08",
+   "name": "Адміністративно-господарські служби",
+   "type": "Підрозділ",
+   "parentId": "P00",
+   "area": 2200
+  },
+  {
+   "id": "P09",
+   "name": "Ремонтно-механічні та допоміжні служби",
+   "type": "Підрозділ",
+   "parentId": "P00",
+   "area": 2800
+  }
+ ],
+ "resources": [
+  {
+   "id": "EL",
+   "name": "Електроенергія",
+   "unit": "кВт·год",
+   "tariff": 7.5
+  },
+  {
+   "id": "GAS",
+   "name": "Природний газ",
+   "unit": "м³",
+   "tariff": 8.0
+  },
+  {
+   "id": "DSL",
+   "name": "Дизельне пальне",
+   "unit": "л",
+   "tariff": 55
+  },
+  {
+   "id": "WTR",
+   "name": "Вода",
+   "unit": "м³",
+   "tariff": 25
+  },
+  {
+   "id": "COAL",
+   "name": "Вугілля (котельні)",
+   "unit": "т",
+   "tariff": 6000
+  },
+  {
+   "id": "HEAT",
+   "name": "Теплова енергія",
+   "unit": "Гкал",
+   "tariff": 2500
+  }
+ ],
+ "limits": [
+  {
+   "d": "P01",
+   "r": "EL",
+   "min": 10000000.0,
+   "max": 40000000.0,
+   "base": 29732947.75
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "min": 0,
+   "max": 500000.0,
+   "base": 295364.76
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "min": 20000.0,
+   "max": 200000.0,
+   "base": 97842.99
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "min": 50000.0,
+   "max": 300000.0,
+   "base": 204120.48
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "min": 0,
+   "max": 3000,
+   "base": 1867.47
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "min": 0,
+   "max": 5000,
+   "base": 2664.05
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "min": 10000000.0,
+   "max": 40000000.0,
+   "base": 24215319.86
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "min": 0,
+   "max": 500000.0,
+   "base": 245979.78
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "min": 20000.0,
+   "max": 200000.0,
+   "base": 141901.0
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "min": 50000.0,
+   "max": 300000.0,
+   "base": 196984.9
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "min": 0,
+   "max": 3000,
+   "base": 2158.26
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "min": 0,
+   "max": 5000,
+   "base": 2567.27
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "min": 10000000.0,
+   "max": 40000000.0,
+   "base": 22726731.44
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "min": 0,
+   "max": 500000.0,
+   "base": 327737.94
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "min": 20000.0,
+   "max": 200000.0,
+   "base": 106497.23
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "min": 50000.0,
+   "max": 300000.0,
+   "base": 161577.29
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "min": 0,
+   "max": 3000,
+   "base": 1965.53
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "min": 0,
+   "max": 5000,
+   "base": 2487.45
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "min": 10000000.0,
+   "max": 40000000.0,
+   "base": 30911305.21
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "min": 0,
+   "max": 500000.0,
+   "base": 274026.31
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "min": 20000.0,
+   "max": 200000.0,
+   "base": 95601.41
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "min": 50000.0,
+   "max": 300000.0,
+   "base": 160490.08
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "min": 0,
+   "max": 3000,
+   "base": 1450.62
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "min": 0,
+   "max": 5000,
+   "base": 2373.02
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "min": 10000000.0,
+   "max": 40000000.0,
+   "base": 28866751.34
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "min": 0,
+   "max": 500000.0,
+   "base": 305845.22
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "min": 20000.0,
+   "max": 200000.0,
+   "base": 92223.38
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "min": 50000.0,
+   "max": 300000.0,
+   "base": 197739.15
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "min": 0,
+   "max": 3000,
+   "base": 1462.01
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "min": 0,
+   "max": 5000,
+   "base": 3542.48
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "min": 10000000.0,
+   "max": 40000000.0,
+   "base": 31157751.22
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "min": 0,
+   "max": 500000.0,
+   "base": 351261.76
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "min": 20000.0,
+   "max": 200000.0,
+   "base": 152639.66
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "min": 50000.0,
+   "max": 300000.0,
+   "base": 212018.71
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "min": 0,
+   "max": 3000,
+   "base": 1529.61
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "min": 0,
+   "max": 5000,
+   "base": 3185.31
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "min": 200000.0,
+   "max": 2000000.0,
+   "base": 1198560.67
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "min": 50000.0,
+   "max": 500000.0,
+   "base": 348304.26
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "min": 50000.0,
+   "max": 500000.0,
+   "base": 260623.55
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "min": 0,
+   "max": 100000.0,
+   "base": 73528.81
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "min": 1000.0,
+   "max": 15000.0,
+   "base": 10967.99
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "min": 100000.0,
+   "max": 2000000.0,
+   "base": 1284044.86
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "min": 0,
+   "max": 150000.0,
+   "base": 72141.23
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "min": 0,
+   "max": 30000.0,
+   "base": 19302.99
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "min": 500,
+   "max": 10000.0,
+   "base": 6115.89
+  }
+ ],
+ "consumption": [
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2016,
+   "qty": 30783707.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2017,
+   "qty": 32065078.67,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2018,
+   "qty": 27276642.53,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2019,
+   "qty": 27805216.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2020,
+   "qty": 23704423.43,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2021,
+   "qty": 26656813.11,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2022,
+   "qty": 23824573.04,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2023,
+   "qty": 19132277.53,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2024,
+   "qty": 22912488.27,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "EL",
+   "year": 2025,
+   "qty": 24499399.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 278850.36,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 300637.95,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 313643.73,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 252901.58,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 275818.76,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 291715.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 224967.56,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 198627.75,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 264346.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 228569.53,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 89951.29,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 104642.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 99872.76,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 98660.41,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 90057.9,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 93624.33,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 89384.25,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 70708.22,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 81066.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 83431.18,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 218886.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 207278.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 212471.94,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 176300.21,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 169850.71,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 185746.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 142710.85,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 140818.22,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 154022.01,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 156045.16,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2016,
+   "qty": 1816.99,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2017,
+   "qty": 1818.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2018,
+   "qty": 1758.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2019,
+   "qty": 1691.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2020,
+   "qty": 1786.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2021,
+   "qty": 1826.62,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2022,
+   "qty": 1542.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2023,
+   "qty": 1262.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2024,
+   "qty": 1601.5,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "COAL",
+   "year": 2025,
+   "qty": 1393.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2016,
+   "qty": 2924.87,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2017,
+   "qty": 2738.64,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2018,
+   "qty": 2694.39,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2019,
+   "qty": 2624.29,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2020,
+   "qty": 2505.12,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2021,
+   "qty": 2670.55,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2022,
+   "qty": 1958.0,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2023,
+   "qty": 1717.57,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2024,
+   "qty": 2103.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P01",
+   "r": "HEAT",
+   "year": 2025,
+   "qty": 2032.24,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2016,
+   "qty": 26360359.94,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2017,
+   "qty": 26038092.35,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2018,
+   "qty": 23317792.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2019,
+   "qty": 23719713.3,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2020,
+   "qty": 20864675.46,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2021,
+   "qty": 24911850.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2022,
+   "qty": 19133116.16,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2023,
+   "qty": 16880451.95,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2024,
+   "qty": 18850340.95,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "EL",
+   "year": 2025,
+   "qty": 19610023.73,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 250141.07,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 265551.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 241030.69,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 220562.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 238001.82,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 234126.01,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 172633.1,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 159419.79,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 185956.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 201799.69,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 139691.88,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 129513.83,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 138541.33,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 148181.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 125600.0,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 147506.78,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 125807.6,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 90828.45,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 121495.41,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 117646.38,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 187798.52,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 202538.37,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 181681.23,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 184694.11,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 171742.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 204120.68,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 175356.88,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 137251.7,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 161546.55,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 147459.8,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2016,
+   "qty": 2318.2,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2017,
+   "qty": 2071.26,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2018,
+   "qty": 2218.24,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2019,
+   "qty": 2095.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2020,
+   "qty": 1767.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2021,
+   "qty": 2157.99,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2022,
+   "qty": 1747.01,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2023,
+   "qty": 1754.0,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2024,
+   "qty": 1780.52,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "COAL",
+   "year": 2025,
+   "qty": 1554.14,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2016,
+   "qty": 2320.54,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2017,
+   "qty": 2787.59,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2018,
+   "qty": 2761.73,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2019,
+   "qty": 2600.69,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2020,
+   "qty": 2172.22,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2021,
+   "qty": 2223.27,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2022,
+   "qty": 2286.72,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2023,
+   "qty": 2183.63,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2024,
+   "qty": 1930.71,
+   "type": "synthetic"
+  },
+  {
+   "d": "P02",
+   "r": "HEAT",
+   "year": 2025,
+   "qty": 2048.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2016,
+   "qty": 23911258.52,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2017,
+   "qty": 23935040.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2018,
+   "qty": 21037641.96,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2019,
+   "qty": 21483662.22,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2020,
+   "qty": 20198733.3,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2021,
+   "qty": 20575890.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2022,
+   "qty": 20212789.72,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2023,
+   "qty": 16652013.32,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2024,
+   "qty": 17561738.68,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "EL",
+   "year": 2025,
+   "qty": 18324276.62,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 308149.11,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 315396.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 360193.79,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 320683.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 284838.88,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 312445.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 232379.64,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 225502.35,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 260042.37,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 266821.09,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 100538.02,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 97359.62,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 109289.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 95687.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 101316.56,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 108449.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 74229.18,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 73595.02,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 90279.02,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 80328.51,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 175651.13,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 163873.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 160694.14,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 162236.15,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 150932.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 143994.11,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 113631.39,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 118676.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 130468.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 128409.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2016,
+   "qty": 2033.68,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2017,
+   "qty": 2155.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2018,
+   "qty": 1807.67,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2019,
+   "qty": 1830.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2020,
+   "qty": 1674.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2021,
+   "qty": 2002.32,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2022,
+   "qty": 1453.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2023,
+   "qty": 1337.14,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2024,
+   "qty": 1595.17,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "COAL",
+   "year": 2025,
+   "qty": 1547.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2016,
+   "qty": 2362.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2017,
+   "qty": 2698.02,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2018,
+   "qty": 2459.16,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2019,
+   "qty": 2533.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2020,
+   "qty": 2210.99,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2021,
+   "qty": 2150.68,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2022,
+   "qty": 2288.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2023,
+   "qty": 2053.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2024,
+   "qty": 2231.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P03",
+   "r": "HEAT",
+   "year": 2025,
+   "qty": 2159.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2016,
+   "qty": 28848353.39,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2017,
+   "qty": 30822534.9,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2018,
+   "qty": 29141616.29,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2019,
+   "qty": 28784534.94,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2020,
+   "qty": 24800753.15,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2021,
+   "qty": 28654931.17,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2022,
+   "qty": 28329411.32,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2023,
+   "qty": 21550455.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2024,
+   "qty": 26787353.14,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "EL",
+   "year": 2025,
+   "qty": 24506524.15,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 299089.72,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 301178.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 277082.71,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 271696.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 224494.48,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 249740.59,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 250046.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 210401.67,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 226597.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 230093.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 97210.91,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 95655.91,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 102345.51,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 84598.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 91882.24,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 83194.37,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 69272.59,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 73745.29,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 81140.25,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 72430.75,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 173017.53,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 152344.1,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 163523.96,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 156105.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 138949.68,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 155017.0,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 129269.6,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 136064.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 123817.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 133943.53,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2016,
+   "qty": 1420.38,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2017,
+   "qty": 1500.43,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2018,
+   "qty": 1392.59,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2019,
+   "qty": 1327.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2020,
+   "qty": 1340.85,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2021,
+   "qty": 1260.27,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2022,
+   "qty": 1145.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2023,
+   "qty": 1250.66,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2024,
+   "qty": 1307.53,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "COAL",
+   "year": 2025,
+   "qty": 1061.45,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2016,
+   "qty": 2261.58,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2017,
+   "qty": 2578.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2018,
+   "qty": 2553.78,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2019,
+   "qty": 2425.37,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2020,
+   "qty": 2033.77,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2021,
+   "qty": 2100.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2022,
+   "qty": 2088.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2023,
+   "qty": 1888.44,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2024,
+   "qty": 1989.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P04",
+   "r": "HEAT",
+   "year": 2025,
+   "qty": 2083.41,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2016,
+   "qty": 26025241.74,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2017,
+   "qty": 30697504.58,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2018,
+   "qty": 27708494.61,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2019,
+   "qty": 28319549.04,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2020,
+   "qty": 27632746.24,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2021,
+   "qty": 25417616.55,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2022,
+   "qty": 20429083.09,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2023,
+   "qty": 19097754.69,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2024,
+   "qty": 23922704.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "EL",
+   "year": 2025,
+   "qty": 22041950.26,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 319156.35,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 287714.55,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 314056.43,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 276837.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 268526.48,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 314107.3,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 270081.18,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 201327.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 246959.75,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 233747.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 97224.09,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 94752.39,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 87832.72,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 91839.17,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 81995.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 86345.11,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 62925.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 60353.73,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 81417.52,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 79738.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 210971.66,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 201002.22,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 183822.02,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 173855.16,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 167337.44,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 202842.1,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 172244.51,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 164352.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 175082.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 149018.64,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2016,
+   "qty": 1345.87,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2017,
+   "qty": 1543.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2018,
+   "qty": 1574.33,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2019,
+   "qty": 1362.9,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2020,
+   "qty": 1317.62,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2021,
+   "qty": 1292.95,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2022,
+   "qty": 1320.45,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2023,
+   "qty": 1216.45,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2024,
+   "qty": 1313.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "COAL",
+   "year": 2025,
+   "qty": 1242.3,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2016,
+   "qty": 3205.79,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2017,
+   "qty": 3710.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2018,
+   "qty": 3423.58,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2019,
+   "qty": 3655.33,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2020,
+   "qty": 3305.82,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2021,
+   "qty": 3610.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2022,
+   "qty": 3098.18,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2023,
+   "qty": 2470.99,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2024,
+   "qty": 3071.79,
+   "type": "synthetic"
+  },
+  {
+   "d": "P05",
+   "r": "HEAT",
+   "year": 2025,
+   "qty": 2611.85,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2016,
+   "qty": 33392343.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2017,
+   "qty": 29428082.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2018,
+   "qty": 33130576.56,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2019,
+   "qty": 29364859.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2020,
+   "qty": 26350533.72,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2021,
+   "qty": 31348300.96,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2022,
+   "qty": 22889198.09,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2023,
+   "qty": 20028965.78,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2024,
+   "qty": 23981288.74,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "EL",
+   "year": 2025,
+   "qty": 24070045.55,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 384061.82,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 335744.77,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 361201.18,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 327003.23,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 338856.02,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 336115.7,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 318038.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 233045.28,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 315132.98,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 262944.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 145479.83,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 140685.0,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 150642.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 151635.83,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 129317.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 148087.9,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 122530.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 110536.91,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 127081.74,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 116121.48,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 190888.56,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 230064.69,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 213649.22,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 210257.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 195604.9,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 208291.3,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 162705.95,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 138499.97,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 179566.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 163854.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2016,
+   "qty": 1636.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2017,
+   "qty": 1596.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2018,
+   "qty": 1468.52,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2019,
+   "qty": 1397.7,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2020,
+   "qty": 1321.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2021,
+   "qty": 1424.76,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2022,
+   "qty": 1148.67,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2023,
+   "qty": 1018.93,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2024,
+   "qty": 1234.32,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "COAL",
+   "year": 2025,
+   "qty": 1331.46,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2016,
+   "qty": 3441.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2017,
+   "qty": 3258.9,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2018,
+   "qty": 3058.5,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2019,
+   "qty": 3055.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2020,
+   "qty": 2522.99,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2021,
+   "qty": 2897.08,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2022,
+   "qty": 2494.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2023,
+   "qty": 2446.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2024,
+   "qty": 2692.77,
+   "type": "synthetic"
+  },
+  {
+   "d": "P06",
+   "r": "HEAT",
+   "year": 2025,
+   "qty": 2530.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2016,
+   "qty": 1129931.42,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2017,
+   "qty": 1192133.07,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2018,
+   "qty": 1294728.58,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2019,
+   "qty": 1206045.33,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2020,
+   "qty": 985055.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2021,
+   "qty": 1044079.57,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2022,
+   "qty": 963293.38,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2023,
+   "qty": 934771.48,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2024,
+   "qty": 950423.7,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "EL",
+   "year": 2025,
+   "qty": 1019912.51,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 360341.35,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 329122.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 327345.39,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 299416.56,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 290866.2,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 329243.62,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 307879.04,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 227751.4,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 280722.2,
+   "type": "synthetic"
+  },
+  {
+   "d": "P07",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 285875.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2016,
+   "qty": 270858.46,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2017,
+   "qty": 260330.46,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2018,
+   "qty": 247278.81,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2019,
+   "qty": 255320.13,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2020,
+   "qty": 206668.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2021,
+   "qty": 260019.75,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2022,
+   "qty": 225390.14,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2023,
+   "qty": 172397.82,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2024,
+   "qty": 210511.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "EL",
+   "year": 2025,
+   "qty": 194983.39,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 73792.89,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 66914.43,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 69840.58,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 74718.79,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 64141.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 74063.3,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 61780.28,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 63218.29,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 61444.66,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 64117.59,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 11215.1,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 11448.99,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 10978.47,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 11108.47,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 9744.24,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 11247.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 9415.77,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 8163.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 8560.6,
+   "type": "synthetic"
+  },
+  {
+   "d": "P08",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 8330.83,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2016,
+   "qty": 1352308.2,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2017,
+   "qty": 1289514.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2018,
+   "qty": 1316595.0,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2019,
+   "qty": 1164851.49,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2020,
+   "qty": 1034474.14,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2021,
+   "qty": 1167567.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2022,
+   "qty": 956885.16,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2023,
+   "qty": 910945.92,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2024,
+   "qty": 1061372.18,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "EL",
+   "year": 2025,
+   "qty": 952940.86,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2016,
+   "qty": 74939.59,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2017,
+   "qty": 75119.5,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2018,
+   "qty": 65853.82,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2019,
+   "qty": 67267.65,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2020,
+   "qty": 64025.31,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2021,
+   "qty": 67379.7,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2022,
+   "qty": 52637.15,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2023,
+   "qty": 52809.71,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2024,
+   "qty": 63945.52,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "GAS",
+   "year": 2025,
+   "qty": 58683.48,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2016,
+   "qty": 20680.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2017,
+   "qty": 20328.34,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2018,
+   "qty": 18841.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2019,
+   "qty": 16525.68,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2020,
+   "qty": 16483.01,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2021,
+   "qty": 19267.48,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2022,
+   "qty": 17079.82,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2023,
+   "qty": 16446.57,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2024,
+   "qty": 15572.1,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "DSL",
+   "year": 2025,
+   "qty": 16206.84,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2016,
+   "qty": 6242.19,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2017,
+   "qty": 5774.06,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2018,
+   "qty": 5772.69,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2019,
+   "qty": 5735.54,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2020,
+   "qty": 4875.03,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2021,
+   "qty": 5619.67,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2022,
+   "qty": 5155.66,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2023,
+   "qty": 4455.25,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2024,
+   "qty": 4679.07,
+   "type": "synthetic"
+  },
+  {
+   "d": "P09",
+   "r": "WTR",
+   "year": 2025,
+   "qty": 4860.8,
+   "type": "synthetic"
+  }
+ ],
+ "production": [
+  {
+   "d": "P01",
+   "year": 2016,
+   "tons": 463074
+  },
+  {
+   "d": "P01",
+   "year": 2017,
+   "tons": 432348
+  },
+  {
+   "d": "P01",
+   "year": 2018,
+   "tons": 457997
+  },
+  {
+   "d": "P01",
+   "year": 2019,
+   "tons": 414506
+  },
+  {
+   "d": "P01",
+   "year": 2020,
+   "tons": 388269
+  },
+  {
+   "d": "P01",
+   "year": 2021,
+   "tons": 381307
+  },
+  {
+   "d": "P01",
+   "year": 2022,
+   "tons": 340071
+  },
+  {
+   "d": "P01",
+   "year": 2023,
+   "tons": 341430
+  },
+  {
+   "d": "P01",
+   "year": 2024,
+   "tons": 334644
+  },
+  {
+   "d": "P01",
+   "year": 2025,
+   "tons": 330799
+  },
+  {
+   "d": "P02",
+   "year": 2016,
+   "tons": 605705
+  },
+  {
+   "d": "P02",
+   "year": 2017,
+   "tons": 617408
+  },
+  {
+   "d": "P02",
+   "year": 2018,
+   "tons": 661541
+  },
+  {
+   "d": "P02",
+   "year": 2019,
+   "tons": 591583
+  },
+  {
+   "d": "P02",
+   "year": 2020,
+   "tons": 581332
+  },
+  {
+   "d": "P02",
+   "year": 2021,
+   "tons": 635287
+  },
+  {
+   "d": "P02",
+   "year": 2022,
+   "tons": 487865
+  },
+  {
+   "d": "P02",
+   "year": 2023,
+   "tons": 444391
+  },
+  {
+   "d": "P02",
+   "year": 2024,
+   "tons": 480659
+  },
+  {
+   "d": "P02",
+   "year": 2025,
+   "tons": 511204
+  },
+  {
+   "d": "P03",
+   "year": 2016,
+   "tons": 628966
+  },
+  {
+   "d": "P03",
+   "year": 2017,
+   "tons": 612584
+  },
+  {
+   "d": "P03",
+   "year": 2018,
+   "tons": 706143
+  },
+  {
+   "d": "P03",
+   "year": 2019,
+   "tons": 579118
+  },
+  {
+   "d": "P03",
+   "year": 2020,
+   "tons": 535592
+  },
+  {
+   "d": "P03",
+   "year": 2021,
+   "tons": 599824
+  },
+  {
+   "d": "P03",
+   "year": 2022,
+   "tons": 554971
+  },
+  {
+   "d": "P03",
+   "year": 2023,
+   "tons": 503081
+  },
+  {
+   "d": "P03",
+   "year": 2024,
+   "tons": 516989
+  },
+  {
+   "d": "P03",
+   "year": 2025,
+   "tons": 524173
+  },
+  {
+   "d": "P04",
+   "year": 2016,
+   "tons": 421268
+  },
+  {
+   "d": "P04",
+   "year": 2017,
+   "tons": 398183
+  },
+  {
+   "d": "P04",
+   "year": 2018,
+   "tons": 430308
+  },
+  {
+   "d": "P04",
+   "year": 2019,
+   "tons": 413067
+  },
+  {
+   "d": "P04",
+   "year": 2020,
+   "tons": 347455
+  },
+  {
+   "d": "P04",
+   "year": 2021,
+   "tons": 402948
+  },
+  {
+   "d": "P04",
+   "year": 2022,
+   "tons": 346833
+  },
+  {
+   "d": "P04",
+   "year": 2023,
+   "tons": 293461
+  },
+  {
+   "d": "P04",
+   "year": 2024,
+   "tons": 359409
+  },
+  {
+   "d": "P04",
+   "year": 2025,
+   "tons": 358405
+  },
+  {
+   "d": "P05",
+   "year": 2016,
+   "tons": 415162
+  },
+  {
+   "d": "P05",
+   "year": 2017,
+   "tons": 438135
+  },
+  {
+   "d": "P05",
+   "year": 2018,
+   "tons": 414972
+  },
+  {
+   "d": "P05",
+   "year": 2019,
+   "tons": 414928
+  },
+  {
+   "d": "P05",
+   "year": 2020,
+   "tons": 353602
+  },
+  {
+   "d": "P05",
+   "year": 2021,
+   "tons": 417012
+  },
+  {
+   "d": "P05",
+   "year": 2022,
+   "tons": 312168
+  },
+  {
+   "d": "P05",
+   "year": 2023,
+   "tons": 312031
+  },
+  {
+   "d": "P05",
+   "year": 2024,
+   "tons": 353982
+  },
+  {
+   "d": "P05",
+   "year": 2025,
+   "tons": 314505
+  },
+  {
+   "d": "P06",
+   "year": 2016,
+   "tons": 642077
+  },
+  {
+   "d": "P06",
+   "year": 2017,
+   "tons": 617768
+  },
+  {
+   "d": "P06",
+   "year": 2018,
+   "tons": 571136
+  },
+  {
+   "d": "P06",
+   "year": 2019,
+   "tons": 622315
+  },
+  {
+   "d": "P06",
+   "year": 2020,
+   "tons": 559235
+  },
+  {
+   "d": "P06",
+   "year": 2021,
+   "tons": 563479
+  },
+  {
+   "d": "P06",
+   "year": 2022,
+   "tons": 480826
+  },
+  {
+   "d": "P06",
+   "year": 2023,
+   "tons": 446557
+  },
+  {
+   "d": "P06",
+   "year": 2024,
+   "tons": 499035
+  },
+  {
+   "d": "P06",
+   "year": 2025,
+   "tons": 474044
+  }
+ ]
+}

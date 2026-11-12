@@ -1,0 +1,42 @@
+<div class="tab">
+    <h3>Структурні одиниці підприємства</h3>
+    <div class="form">
+        <mat-form-field><mat-label>Код</mat-label><input matInput [(ngModel)]="nd.id"></mat-form-field>
+        <mat-form-field class="w2"><mat-label>Назва</mat-label><input matInput [(ngModel)]="nd.name"></mat-form-field>
+        <mat-form-field><mat-label>Тип</mat-label><mat-select [(ngModel)]="nd.type">
+                @for (t of types; track t){<mat-option [value]="t">{{t}}</mat-option>}</mat-select></mat-form-field>
+        <mat-form-field><mat-label>Код верхн.</mat-label><input matInput [(ngModel)]="nd.parentId"></mat-form-field>
+        <mat-form-field><mat-label>Опал. площа</mat-label><input matInput type="number"
+                [(ngModel)]="nd.area"></mat-form-field>
+        <button mat-flat-button color="primary" (click)="add()">Додати</button>
+    </div>
+    <table mat-table [dataSource]="ds.depts()">
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Код</th>
+            <td mat-cell *matCellDef="let e">{{e.id}}</td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef>Назва</th>
+            <td mat-cell *matCellDef="let e">{{e.name}}</td>
+        </ng-container>
+        <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef>Тип</th>
+            <td mat-cell *matCellDef="let e">{{e.type}}</td>
+        </ng-container>
+        <ng-container matColumnDef="parentId">
+            <th mat-header-cell *matHeaderCellDef>Код верхн.</th>
+            <td mat-cell *matCellDef="let e">{{e.parentId}}</td>
+        </ng-container>
+        <ng-container matColumnDef="area">
+            <th mat-header-cell *matHeaderCellDef>Опал. площа</th>
+            <td mat-cell *matCellDef="let e">{{e.area ?? '—'}}</td>
+        </ng-container>
+        <ng-container matColumnDef="act">
+            <th mat-header-cell *matHeaderCellDef>Дії</th>
+            <td mat-cell *matCellDef="let e"><button mat-icon-button color="warn"
+                    (click)="ds.removeDept(e.id)"><mat-icon>delete</mat-icon></button></td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="cols"></tr>
+        <tr mat-row *matRowDef="let r; columns: cols"></tr>
+    </table>
+</div>

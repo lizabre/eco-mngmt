@@ -1,0 +1,59 @@
+<mat-toolbar color="primary">
+    <a mat-button routerLink="/"><mat-icon>arrow_back</mat-icon> Головна</a>
+    <span>Помісячне споживання та витрати</span><span style="flex:1"></span>
+    <button mat-button (click)="exportCsv()"><mat-icon>download</mat-icon> CSV</button>
+</mat-toolbar>
+
+<div class="wrap">
+    <mat-card>
+        <mat-card-content>
+            <div class="filters">
+                <mat-form-field><mat-label>Рік</mat-label>
+                    <mat-select [value]="year()" (selectionChange)="setYear($event.value)">
+                        @for (y of ds.years; track y) { <mat-option [value]="y">{{y}}</mat-option> }
+                    </mat-select></mat-form-field>
+                <mat-form-field class="dept"><mat-label>Підрозділ</mat-label>
+                    <mat-select [value]="dept()" (selectionChange)="setDept($event.value)">
+                        <mat-option value="">Усе підприємство (сума)</mat-option>
+                        @for (d of leafDepts(); track d.id) { <mat-option [value]="d.id">{{d.name}}</mat-option> }
+                    </mat-select></mat-form-field>
+            </div>
+            @if (!canEdit()) {
+            <p class="hint">Щоб редагувати значення, оберіть конкретний підрозділ. Для підприємства показано суму.</p>
+            }
+
+            @if (data(); as d) {
+            <div class="scroll">
+                <table class="passport">
+                    <thead>
+                        <tr>
+                            <th>Рік</th>
+                            <th class="res">Ресурс</th>
+                            <th>Од.</th>
+                            @for (m of months; track m) { <th>{{m}}</th> }
+                            <th>Усього за рік</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (r of d.rows; track r.key; let i = $index) {
+                        <tr>
+                            @if (i === 0) { <td class="year" [attr.rowspan]="d.rows.length">{{d.year}}</td> }
+                            <td class="res">{{r.label}}</td>
+                            <td class="unit">{{r.unit}}</td>
+                            @for (v of r.months; track $index; let mi = $index) {
+                            <td class="num">
+                                @if (canEdit() && r.editable) {
+                                <input type="text" inputmode="decimal" [value]="v" (change)="save(r, mi, $any($event.target).value)" />
+                                } @else { {{v | number:'1.0-2'}} }
+                            </td>
+                            }
+                            <td class="num total">{{r.total | number:'1.0-2'}}</td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            } @else { <p>Завантаження…</p> }
+        </mat-card-content>
+    </mat-card>
+</div>

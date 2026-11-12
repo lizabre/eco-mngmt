@@ -1,0 +1,10 @@
+.wrap {
+  max-width: 1200px;
+  margin: 16px auto;
+  padding: 0 16px;
+}
+.head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

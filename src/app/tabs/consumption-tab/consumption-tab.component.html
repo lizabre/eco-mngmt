@@ -1,0 +1,34 @@
+<div class="tab">
+    <h3>Обсяги споживання та виробництва</h3>
+    <div class="form">
+        <mat-form-field><mat-label>Рік</mat-label><mat-select [(ngModel)]="year">
+                @for (y of ds.years; track y){<mat-option [value]="y">{{y}}</mat-option>}</mat-select></mat-form-field>
+        <button mat-flat-button color="primary" (click)="gen([year])"><mat-icon>casino</mat-icon> Згенерувати за
+            рік</button>
+        <button mat-stroked-button (click)="gen(ds.years)">Згенерувати за 2016–2025</button>
+    </div>
+    <p class="hint">Автозаповнення — випадкові значення в межах [min; max]. Будь-яке значення можна виправити вручну.
+    </p>
+    <div class="scroll">
+        <table class="plain">
+            <tr>
+                <th>Підрозділ</th>@for (r of ds.resources(); track r.id){<th>{{r.name}}, {{r.unit}}</th>}
+            </tr>
+            @for (d of ds.depts(); track d.id) { @if (d.id !== 'P00') {
+            <tr>
+                <td>{{d.name}}</td>
+                @for (r of ds.resources(); track r.id) {
+                <td>@if (ds.hasLimit(d.id, r.id)) {
+                    <input type="number" [value]="ds.q(d.id, r.id, year)"
+                        (change)="ds.setQ(d.id, r.id, year, +$any($event.target).value)">
+                    } @else { — }
+                </td> }
+            </tr> } }
+        </table>
+    </div>
+    <h3>Обсяг виробництва, т ({{year}})</h3>
+    @for (d of ds.depts(); track d.id) { @if (d.type === 'Шахта') {
+    <div class="row"><span class="lbl">{{d.name}}</span>
+        <input type="number" [value]="ds.p(d.id, year)" (change)="ds.setP(d.id, year, +$any($event.target).value)">
+    </div> } }
+</div>

@@ -1,0 +1,140 @@
+<mat-toolbar color="primary">
+    <span>Енергетичний паспорт підприємства</span><span style="flex:1"></span>
+    <button mat-button (click)="ds.exportCsv()"><mat-icon>download</mat-icon> CSV</button>
+    <a mat-button routerLink="/passport"><mat-icon>table_chart</mat-icon> Помісячна таблиця</a>
+    <a mat-flat-button routerLink="/data"><mat-icon>edit</mat-icon> Керування даними</a>
+</mat-toolbar>
+
+<div class="wrap">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>1. Загальні відомості</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="info">
+            <div><b>Підприємство:</b> ДП «Львіввугілля»</div>
+            <div><b>Вид діяльності:</b> видобуток кам’яного вугілля</div>
+            <div><b>Період обліку:</b> 2016–2025</div>
+            <div><b>Структурних одиниць:</b> {{ ds.depts().length }}</div>
+            <div><b>Ресурсів:</b> {{ ds.resources().length }}</div>
+        </mat-card-content></mat-card>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>2. Структурні підрозділи</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <table mat-table [dataSource]="ds.depts()">
+                <ng-container matColumnDef="id">
+                    <th mat-header-cell *matHeaderCellDef>Код</th>
+                    <td mat-cell *matCellDef="let e">{{e.id}}</td>
+                </ng-container>
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef>Назва</th>
+                    <td mat-cell *matCellDef="let e">{{e.name}}</td>
+                </ng-container>
+                <ng-container matColumnDef="type">
+                    <th mat-header-cell *matHeaderCellDef>Тип</th>
+                    <td mat-cell *matCellDef="let e">{{e.type}}</td>
+                </ng-container>
+                <ng-container matColumnDef="parentId">
+                    <th mat-header-cell *matHeaderCellDef>Код верхн.</th>
+                    <td mat-cell *matCellDef="let e">{{e.parentId}}</td>
+                </ng-container>
+                <ng-container matColumnDef="area">
+                    <th mat-header-cell *matHeaderCellDef>Опал. площа, м²</th>
+                    <td mat-cell *matCellDef="let e">{{e.area ?? '—'}}</td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="dCols"></tr>
+                <tr mat-row *matRowDef="let r; columns: dCols"></tr>
+            </table>
+        </mat-card-content></mat-card>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>3. Ресурси, тарифи та споживання</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field><mat-label>Рік</mat-label>
+                <mat-select [(ngModel)]="year" (ngModelChange)="yearSig.set($event)">
+                    @for (y of ds.years; track y) { <mat-option [value]="y">{{y}}</mat-option> }
+                </mat-select></mat-form-field>
+            <div class="scroll">
+                <table mat-table [dataSource]="ds.resources()">
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef>Ресурс</th>
+                        <td mat-cell *matCellDef="let e">{{e.name}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="unit">
+                        <th mat-header-cell *matHeaderCellDef>Од.</th>
+                        <td mat-cell *matCellDef="let e">{{e.unit}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="tariff">
+                        <th mat-header-cell *matHeaderCellDef>Тариф, грн</th>
+                        <td mat-cell *matCellDef="let e">{{e.tariff | number:'1.0-2'}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="total">
+                        <th mat-header-cell *matHeaderCellDef>Всього за {{yearSig()}}</th>
+                        <td mat-cell *matCellDef="let e">{{ds.total(e.id, yearSig()) | number:'1.0-0'}}</td>
+                    </ng-container>
+                    <ng-container matColumnDef="cost">
+                        <th mat-header-cell *matHeaderCellDef>Вартість, тис. грн</th>
+                        <td mat-cell *matCellDef="let e">{{ds.total(e.id, yearSig()) * e.tariff / 1000 |
+                            number:'1.0-0'}}</td>
+                    </ng-container>
+                    <tr mat-header-row *matHeaderRowDef="rCols"></tr>
+                    <tr mat-row *matRowDef="let r; columns: rCols"></tr>
+                </table>
+            </div>
+        </mat-card-content></mat-card>
+
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>4. Споживання за підрозділами,
+                {{yearSig()}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="scroll">
+                <table class="plain">
+                    <tr>
+                        <th>Підрозділ</th>@for (r of ds.resources(); track r.id){<th>{{r.name}}, {{r.unit}}</th>}<th>
+                            Вартість, тис. грн</th>
+                    </tr>
+                    @for (d of ds.depts(); track d.id) { @if (d.id !== 'P00') {
+                    <tr>
+                        <td>{{d.name}}</td>@for (r of ds.resources(); track r.id){<td>{{ds.q(d.id, r.id, yearSig()) |
+                            number:'1.0-0'}}</td>}
+                        <td>{{ds.deptTotalCost(d.id, yearSig())/1000 | number:'1.0-0'}}</td>
+                    </tr> } }
+                </table>
+            </div>
+        </mat-card-content></mat-card>
+
+    <mat-card><mat-card-header><mat-card-title>5. Динаміка споживання за роками</mat-card-title></mat-card-header>
+        <mat-card-content>
+            <mat-form-field><mat-label>Ресурс</mat-label>
+                <mat-select [value]="resSig()" (selectionChange)="resSig.set($event.value)">
+                    @for (r of ds.resources(); track r.id) { <mat-option [value]="r.id">{{r.name}}</mat-option> }
+                </mat-select></mat-form-field>
+            <div class="chart">
+                @for (b of bars(); track b.year) {
+                <div class="col"><span>{{b.v | number:'1.0-0'}}</span>
+                    <div class="bar" [style.height.%]="b.h"></div><small>{{b.year}}</small>
+                </div> }
+            </div>
+        </mat-card-content></mat-card>
+
+    <mat-card><mat-card-header><mat-card-title>6. Обсяги виробництва продукції (вугілля,
+                т)</mat-card-title></mat-card-header>
+        <mat-card-content>
+            <div class="scroll">
+                <table class="plain">
+                    <tr>
+                        <th>Підрозділ</th>@for (y of ds.years; track y){<th>{{y}}</th>}
+                    </tr>
+                    @for (d of mines(); track d.id){ <tr>
+                        <td>{{d.name}}</td>@for (y of ds.years; track y){<td>{{ds.p(d.id, y) | number:'1.0-0'}}</td>}
+                    </tr> }
+                </table>
+            </div>
+        </mat-card-content></mat-card>
+</div>
